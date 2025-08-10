@@ -12,6 +12,7 @@ import { SidebarTrigger } from "@/components/ui/sidebar";
 import RunsOverview from "@/components/shared/runOverview/Runs-overview";
 import { motion, AnimatePresence } from "framer-motion";
 import ArrowIcon from "@/components/shared/left-arrow-icon/Arrow-icon";
+import WorkflowTopbar from "@/components/shared/workflowTopbar/Workflow-topbar";
 
 
 type Tab = "editor" | "runs";
@@ -51,72 +52,9 @@ const WorkflowPage = () => {
       className="bg-[#FCFCFD] h-full overflow-x-hidden"
     >
       {/* <div className="bg-[#FCFCFD] h-full overflow-x-hidden"> */}
-      <div className="relative flex flex-wrap items-center justify-between px-4 md:px-8 py-2 md:py-0 h-auto md:h-[60px] bg-[#FFFFFF]">
-        {/* Center Section */}
-        <div className="w-full md:w-auto md:absolute md:left-1/2 md:transform md:-translate-x-1/2 flex justify-center">
-          <div className="flex items-center gap-2 p-2">
-            <Image
-              src="/dashboardIcons/gmail.svg"
-              width={30}
-              height={30}
-              alt="Gmail icon"
-              className="border p-1 rounded-[3px]"
-            />
-            <div className="flex flex-col">
-              <p className="text-sm font-semibold text-[#22222F]">
-                Gmail - Email received
-              </p>
-            </div>
-            <Image src="/dashboardIcons/star.svg" width={20} height={20} alt="star icon" className="text-[#8588AB] cursor-pointer" />
-            <MdOutlineKeyboardArrowDown className="text-[#8588AB] cursor-pointer -ml-1" />
-          </div>
-        </div>
 
-        {/* Top Right Icons */}
-        <div className="flex items-center gap-3 w-full md:w-auto justify-center md:justify-end">
-          <Image
-            src="/dashboardIcons/messageImg.svg"
-            width={20}
-            height={20}
-            alt="Message image"
-            className="cursor-pointer"
-          />
-          {/* "trigger icon" */}
-          <SidebarTrigger className="text-[#8588AB] hover:text-[#8588AB] cursor-pointer" />
-        </div>
-
-        {/* Bottom Right Icons */}
-        <div className="flex items-center gap-2 w-full md:w-auto justify-center md:justify-end">
-          <Image
-            src="/notifications.svg"
-            width={30}
-            height={30}
-            alt=""
-            className="border p-0.5 text-sm rounded-sm cursor-pointer"
-          />
-          <Image
-            src="/share.svg"
-            width={30}
-            height={30}
-            alt=""
-            className="border p-0.5 text-sm rounded-sm cursor-pointer"
-          />
-          <Image
-            src="/help.svg"
-            width={30}
-            height={30}
-            alt=""
-            className="border p-0.5 text-sm rounded-sm cursor-pointer"
-          />
-          <Image
-            src="/dots.svg"
-            width={30}
-            height={30}
-            alt=""
-            className="border p-0.5 text-sm rounded-sm cursor-pointer"
-          />
-        </div>
-      </div>
+      {/* this is common component  */}
+      <WorkflowTopbar/>
 
       <div className="text-center bg-[#FFFFFF]">
         <Separator className="mb-2 bg-gray-200" />
