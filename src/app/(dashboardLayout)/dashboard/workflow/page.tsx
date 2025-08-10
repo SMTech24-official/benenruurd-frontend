@@ -5,10 +5,8 @@ import { useState } from "react";
 import { RxCross2 } from "react-icons/rx";
 import {
   MdKeyboardArrowRight,
-  MdOutlineKeyboardArrowDown,
 } from "react-icons/md";
 import Link from "next/link";
-import { SidebarTrigger } from "@/components/ui/sidebar";
 import RunsOverview from "@/components/shared/runOverview/Runs-overview";
 import { motion, AnimatePresence } from "framer-motion";
 import ArrowIcon from "@/components/shared/left-arrow-icon/Arrow-icon";

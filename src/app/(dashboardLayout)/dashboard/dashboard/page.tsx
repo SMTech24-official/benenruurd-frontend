@@ -17,11 +17,11 @@ interface WorkflowItem {
   status: WorkflowStatus;
 }
 
-interface InfoCardProps {
-  title: string;
-  description: string;
-  icon: string;
-}
+// interface InfoCardProps {
+//   title: string;
+//   description: string;
+//   icon: string;
+// }
 
 function Dashboard() {
   const workflows: WorkflowItem[] = [
