@@ -102,23 +102,23 @@ function Dashboard() {
     },
   ];
 
-  const infoCards: InfoCardProps[] = [
-    {
-      title: "Documentation",
-      description: "Learn about the best practices and check all functions of the platform.",
-      icon: "/dashboardIcons/documentation.svg",
-    },
-    {
-      title: "Templates",
-      description: "Explore pre-built workflows for common use cases.",
-      icon: "/dashboardIcons/documentation.svg",
-    },
-    {
-      title: "Community",
-      description: "Get support from other users and exchange ideas for new workflows and functions.",
-      icon: "/dashboardIcons/documentation.svg",
-    },
-  ];
+  // const infoCards: InfoCardProps[] = [
+  //   {
+  //     title: "Documentation",
+  //     description: "Learn about the best practices and check all functions of the platform.",
+  //     icon: "/dashboardIcons/documentation.svg",
+  //   },
+  //   {
+  //     title: "Templates",
+  //     description: "Explore pre-built workflows for common use cases.",
+  //     icon: "/dashboardIcons/documentation.svg",
+  //   },
+  //   {
+  //     title: "Community",
+  //     description: "Get support from other users and exchange ideas for new workflows and functions.",
+  //     icon: "/dashboardIcons/documentation.svg",
+  //   },
+  // ];
 
   return (
     <motion.div
@@ -295,7 +295,7 @@ function Dashboard() {
       </div>
 
       {/* ================= Explore Section ================= */}
-      <div className="my-24">
+      {/* <div className="my-24">
         <h3 className="text-xl text-[#22222F] font-semibold mb-3">Explore</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {infoCards.map((item, index) => (
@@ -310,8 +310,41 @@ function Dashboard() {
             </div>
           ))}
         </div>
+      </div> */}
+
+      <div className="my-24">
+        <h3 className="text-xl text-[#22222F] font-semibold mb-3">Explore</h3>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="flex items-start gap-3 rounded-xl border border-[#D5D6E2] bg-white p-4 shadow-sm transition hover:shadow-md">
+            <div className="flex items-center justify-center border border-[#D5D6E2] rounded-[3px] bg-[#FCFCFD]">
+              <img src="/dashboardIcons/documentation.svg" alt="" className="p-1"/>
+            </div>
+            <div>
+              <h3 className="text-lg font-semibold text-[#1A1A1A]">Documentation</h3>
+              <p className="text-sm text-[#8588AB] mt-1">Learn about the best practices and check all functions of the platform.</p>
+            </div>
+          </div>
+          <div className="flex items-start gap-3 rounded-xl border border-[#D5D6E2] bg-white p-4 shadow-sm transition hover:shadow-md">
+            <div className="flex items-center justify-center border border-[#D5D6E2] rounded-[3px] bg-[#FCFCFD]">
+              <img src="/dashboardIcons/documentation.svg" alt="" className="p-1"/>
+            </div>
+            <div>
+              <h3 className="text-lg font-semibold text-[#1A1A1A]">Templates</h3>
+              <p className="text-sm text-[#8588AB] mt-1">Explore pre-built workflows for common use cases.</p>
+            </div>
+          </div>
+          <div className="flex items-start gap-3 rounded-xl border border-[#D5D6E2] bg-white p-4 shadow-sm transition hover:shadow-md">
+            <div className="flex items-center justify-center border border-[#D5D6E2] rounded-[3px] bg-[#FCFCFD]">
+              <img src="/dashboardIcons/documentation.svg" alt="" className="p-1"/>
+            </div>
+            <div>
+              <h3 className="text-lg font-semibold text-[#1A1A1A]">Community</h3>
+              <p className="text-sm text-[#8588AB] mt-1">Get support from other users and exchange ideas for new workflows <br /> and functions.</p>
+            </div>
+          </div>
+        </div>
       </div>
-      {/* </div> */}
+
     </motion.div>
   );
 }

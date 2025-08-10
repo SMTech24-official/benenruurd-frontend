@@ -65,7 +65,7 @@ export function DialogCloseContentSetting({
       category: "Team",
     },
     {
-      label: "Plan & Billing",
+      label: "Usage & Billing",
       icon: "/dashboardIcons/integrationModal.svg",
       category: "Team",
     },
@@ -610,7 +610,7 @@ export function DialogCloseContentSetting({
                           </div>
                         </div>
                       </div>
-                    ) : activeItem === "Plan & Billing" ? (
+                    ) : activeItem === "Usage & Billing" ? (
                       <div className="pl-5">
                         <h1 className="text-xl mb-4 font-semibold text-[#22222F]">
                           Usage & Billing
